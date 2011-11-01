@@ -23,6 +23,7 @@ BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	pkgconfig(xcomposite)
 BuildRequires:	gtest-devel
 BuildRequires:	gmock-devel
+BuildRequires:	boost-devel
 
 Requires:	%{libname} = %{version}-%{release}
 
