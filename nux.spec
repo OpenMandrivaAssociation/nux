@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(glewmx)
 BuildRequires:	pkgconfig(pango)
 BuildRequires:	pkgconfig(pangocairo)
 BuildRequires:	pkgconfig(libpci)
+BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	gtest-devel
 BuildRequires:	gmock-devel
 
