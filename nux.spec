@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(pango)
 BuildRequires:	pkgconfig(pangocairo)
 BuildRequires:	pkgconfig(libpci)
 BuildRequires:	pkgconfig(xinerama)
+BuildRequires:	pkgconfig(xcomposite)
 BuildRequires:	gtest-devel
 BuildRequires:	gmock-devel
 
