@@ -1,4 +1,4 @@
-%define api 1.0
+%define api 2.0
 %define major 0
 %define libname %mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
