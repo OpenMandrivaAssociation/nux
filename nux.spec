@@ -21,7 +21,9 @@ BuildRequires:	pkgconfig(pangocairo)
 BuildRequires:	pkgconfig(libpci)
 BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	pkgconfig(xcomposite)
-BuildRequires:	gtest-devel
+BuildRequires:	pkgconfig(libutouch-geis)
+BuildRequires:  pkgconfig(ibus-1.0)
+#BuildRequires:	gtest-devel
 BuildRequires:	gmock-devel
 BuildRequires:	boost-devel
 
@@ -68,8 +70,8 @@ rm -fr %{buildroot}
 %defattr(-, root, root)
 %doc README INSTALL COPYING COPYING.gpl TODO AUTHORS NEWS ChangeLog doxygen-include.am doxygen.cfg
 %{_libdir}/unity_support_test
-%{_datadir}/nux/1.0/UITextures/*
-%{_datadir}/nux/1.0/Fonts/*
+%{_datadir}/nux/2.0/UITextures/*
+%{_datadir}/nux/2.0/Fonts/*
 
 %files -n %{libname}
 %defattr(-, root, root)
@@ -78,16 +80,16 @@ rm -fr %{buildroot}
 %files -n %{develname}
 %defattr(-, root, root)
 %{_datadir}/nux/gputests/*.cpp
-%{_includedir}/Nux-1.0/Nux/*.h
-%{_includedir}/Nux-1.0/Nux/PropertyItem/*.h
-%{_includedir}/Nux-1.0/Nux/Readme.txt
-%{_includedir}/Nux-1.0/NuxImage/*.h
-%{_includedir}/Nux-1.0/NuxGraphics/*.h
-%{_includedir}/Nux-1.0/NuxCore/*.h
-%{_includedir}/Nux-1.0/NuxCore/Character/*.h
-%{_includedir}/Nux-1.0/NuxCore/FileManager/*.h
-%{_includedir}/Nux-1.0/NuxCore/Math/*.h
-%{_includedir}/Nux-1.0/NuxCore/TinyXML/*.h
+%{_includedir}/Nux-2.0/Nux/*.h
+%{_includedir}/Nux-2.0/Nux/PropertyItem/*.h
+%{_includedir}/Nux-2.0/Nux/Readme.txt
+%{_includedir}/Nux-2.0/NuxImage/*.h
+%{_includedir}/Nux-2.0/NuxGraphics/*.h
+%{_includedir}/Nux-2.0/NuxCore/*.h
+%{_includedir}/Nux-2.0/NuxCore/Character/*.h
+%{_includedir}/Nux-2.0/NuxCore/FileManager/*.h
+%{_includedir}/Nux-2.0/NuxCore/Math/*.h
+%{_includedir}/Nux-2.0/NuxCore/TinyXML/*.h
 %{_libdir}/*.so
 #{_libdir}/*.la
 %{_libdir}/pkgconfig/*.pc
