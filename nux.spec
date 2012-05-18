@@ -81,7 +81,6 @@ rm -fr %{buildroot}
 %defattr(-, root, root)
 %{_datadir}/nux/gputests/*.cpp
 %{_includedir}/Nux-2.0/Nux/*.h
-%{_includedir}/Nux-2.0/Nux/PropertyItem/*.h
 %{_includedir}/Nux-2.0/Nux/Readme.txt
 %{_includedir}/Nux-2.0/NuxImage/*.h
 %{_includedir}/Nux-2.0/NuxGraphics/*.h
