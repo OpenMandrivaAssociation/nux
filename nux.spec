@@ -88,6 +88,7 @@ rm -fr %{buildroot}
 %{_includedir}/Nux-2.0/NuxCore/Character/*.h
 %{_includedir}/Nux-2.0/NuxCore/FileManager/*.h
 %{_includedir}/Nux-2.0/NuxCore/Math/*.h
+%{_includedir}/Nux-2.0/Nux/ProgramFramework/*.h
 %{_includedir}/Nux-2.0/NuxCore/TinyXML/*.h
 %{_libdir}/*.so
 #{_libdir}/*.la
