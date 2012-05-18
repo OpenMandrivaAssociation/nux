@@ -12,7 +12,7 @@ Group: System/Libraries
 Source0: http://launchpad.net/%{name}/1.0/%{version}/+download/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
-BuildRequires:	pkgconfig(libpng12)
+BuildRequires:	pkgconfig(libpng15)
 BuildRequires:	pkgconfig(sigc++-2.0)
 BuildRequires:	pkgconfig(glew)
 BuildRequires:	pkgconfig(glewmx)
