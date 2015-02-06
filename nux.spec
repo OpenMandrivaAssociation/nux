@@ -6,7 +6,7 @@
 Summary:	Visual rendering toolkit for real-time applications
 Name:		nux
 Version:	3.10.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		System/Libraries
 Source0:	https://launchpad.net/nux/3.0/3.10/+download/%{name}-%{version}.tar.gz
