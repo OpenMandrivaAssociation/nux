@@ -5,11 +5,11 @@
 
 Summary:	Visual rendering toolkit for real-time applications
 Name:		nux
-Version:	3.10.0
-Release:	2
+Version:	4.0.8
+Release:	1
 License:	LGPL
 Group:		System/Libraries
-Source0:	https://launchpad.net/nux/3.0/3.10/+download/%{name}-%{version}.tar.gz
+Source0:	https://launchpad.net/nux/4.0/%{version}/+download/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(libpng15)
