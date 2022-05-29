@@ -12,10 +12,10 @@ Group:		System/Libraries
 Source0:	https://launchpad.net/nux/4.0/%{version}/+download/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
-BuildRequires:	pkgconfig(libpng15)
+BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(sigc++-2.0)
 BuildRequires:	pkgconfig(glew)
-BuildRequires:	pkgconfig(glewmx)
+#BuildRequires:	pkgconfig(glewmx)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(egl)
 BuildRequires:	pkgconfig(glesv2)
@@ -24,10 +24,9 @@ BuildRequires:	pkgconfig(pangocairo)
 BuildRequires:	pkgconfig(libpci)
 BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	pkgconfig(xcomposite)
-BuildRequires:	pkgconfig(libgeis)
+#BuildRequires:	pkgconfig(libgeis)
 BuildRequires:  pkgconfig(ibus-1.0)
-#BuildRequires:	gtest-devel
-BuildRequires:	gmock-devel
+BuildRequires:	pkgconfig(gmock)
 BuildRequires:	boost-devel
 
 Requires:	%{libname} = %{version}-%{release}
