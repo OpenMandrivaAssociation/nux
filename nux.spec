@@ -75,7 +75,7 @@ rm -f %{buildroot}/%{_libdir}/*.la
 
 %files
 %doc README INSTALL COPYING COPYING.gpl TODO AUTHORS NEWS ChangeLog doxygen-include.am doxygen.cfg
-#{_libdir}/unity_support_test
+%{_libexecdir}/unity_support_test
 %{_datadir}/nux/%{api}/UITextures/*
 %{_datadir}/nux/%{api}/Fonts/*
 
@@ -84,16 +84,7 @@ rm -f %{buildroot}/%{_libdir}/*.la
 
 %files -n %{develname}
 %{_datadir}/nux/gputests/*.cpp
-%{_includedir}/Nux-%{api}/Nux/*.h
-%{_includedir}/Nux-%{api}/Nux/Readme.txt
-#% {_includedir}/%{api}//NuxImage/*.h
-%{_includedir}/Nux-%{api}/NuxGraphics/*.h
-%{_includedir}/Nux-%{api}/NuxCore/*.h
-%{_includedir}/Nux-%{api}/NuxCore/Character/*.h
-%{_includedir}/Nux-%{api}/NuxCore/FileManager/*.h
-%{_includedir}/Nux-%{api}/NuxCore/Math/*.h
-%{_includedir}/Nux-%{api}/Nux/ProgramFramework/*.h
-#% {_includedir}/Nux-%{api}/NuxCore/TinyXML/*.h
+%{_includedir}/Nux-%{api}/
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 
