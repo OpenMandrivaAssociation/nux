@@ -75,7 +75,7 @@ rm -f %{buildroot}/%{_libdir}/*.la
 
 %files
 %doc README INSTALL COPYING COPYING.gpl TODO AUTHORS NEWS ChangeLog doxygen-include.am doxygen.cfg
-%{_libexecdir}/unity_support_test
+%{_libexecdir}/nux/unity_support_test
 %{_datadir}/nux/%{api}/UITextures/*
 %{_datadir}/nux/%{api}/Fonts/*
 
