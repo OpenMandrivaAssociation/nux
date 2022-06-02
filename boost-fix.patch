@@ -1,0 +1,11 @@
+diff -uraN nux-4.0.8/tests/gtest-nux-windowcompositor.cpp omv-nux-4.0.8/tests/gtest-nux-windowcompositor.cpp
+--- nux-4.0.8/tests/gtest-nux-windowcompositor.cpp	2014-02-24 19:14:54.000000000 +0100
++++ omv-nux-4.0.8/tests/gtest-nux-windowcompositor.cpp	2022-06-02 03:07:56.099668971 +0200
+@@ -4,6 +4,7 @@
+ #include <iostream>
+ #include <gmock/gmock.h>
+ #include <boost/filesystem.hpp>
++#include <boost/shared_ptr.hpp>
+ #include <glib.h>
+ #include <list>
+ 

@@ -1,0 +1,11 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -370,7 +370,7 @@ AM_CONDITIONAL(BUILD_DOCUMENTATION, [tes
+ dnl ==========================================================================
+ 
+ if test "x$GCC" = "xyes"; then
+-  GCC_FLAGS="-g -Werror -Wall -Wextra -Wno-unused-parameter -std=c++0x"
++  GCC_FLAGS="-g -Wall -Wextra -Wno-unused-parameter -std=c++0x"
+ fi
+ 
+ # gcc flags for building the tests.
