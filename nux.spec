@@ -1,4 +1,4 @@
-%define api 3.0
+%define api 4.0
 %define major 0
 %define libname %mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
@@ -75,25 +75,25 @@ rm -f %{buildroot}/%{_libdir}/*.la
 
 %files
 %doc README INSTALL COPYING COPYING.gpl TODO AUTHORS NEWS ChangeLog doxygen-include.am doxygen.cfg
-%{_libdir}/unity_support_test
-%{_datadir}/nux/3.0/UITextures/*
-%{_datadir}/nux/3.0/Fonts/*
+#{_libdir}/unity_support_test
+%{_datadir}/nux/%{api}/UITextures/*
+%{_datadir}/nux/%{api}/Fonts/*
 
 %files -n %{libname}
 %{_libdir}/*-%{api}.so.%{major}*
 
 %files -n %{develname}
 %{_datadir}/nux/gputests/*.cpp
-%{_includedir}/Nux-3.0/Nux/*.h
-%{_includedir}/Nux-3.0/Nux/Readme.txt
-#% {_includedir}/Nux-3.0/NuxImage/*.h
-%{_includedir}/Nux-3.0/NuxGraphics/*.h
-%{_includedir}/Nux-3.0/NuxCore/*.h
-%{_includedir}/Nux-3.0/NuxCore/Character/*.h
-%{_includedir}/Nux-3.0/NuxCore/FileManager/*.h
-%{_includedir}/Nux-3.0/NuxCore/Math/*.h
-%{_includedir}/Nux-3.0/Nux/ProgramFramework/*.h
-#% {_includedir}/Nux-3.0/NuxCore/TinyXML/*.h
+%{_includedir}/Nux-%{api}/Nux/*.h
+%{_includedir}/Nux-%{api}/Nux/Readme.txt
+#% {_includedir}/%{api}//NuxImage/*.h
+%{_includedir}/Nux-%{api}/NuxGraphics/*.h
+%{_includedir}/Nux-%{api}/NuxCore/*.h
+%{_includedir}/Nux-%{api}/NuxCore/Character/*.h
+%{_includedir}/Nux-%{api}/NuxCore/FileManager/*.h
+%{_includedir}/Nux-%{api}/NuxCore/Math/*.h
+%{_includedir}/Nux-%{api}/Nux/ProgramFramework/*.h
+#% {_includedir}/Nux-%{api}/NuxCore/TinyXML/*.h
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 
