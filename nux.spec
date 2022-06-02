@@ -10,6 +10,7 @@ Release:	1
 License:	LGPL
 Group:		System/Libraries
 Source0:	https://launchpad.net/nux/4.0/%{version}/+download/%{name}-%{version}.tar.gz
+Patch0:   nux-disable-werror.patch
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(libpng)
@@ -55,7 +56,7 @@ Provides:   %{name}-devel = %{version}-%{release}
 Nux development headers and libraries.
 
 %prep
-%setup -q 
+%autosetup -p1
 
 %build
 %define _disable_ld_no_undefined 1
