@@ -59,14 +59,16 @@ Nux development headers and libraries.
 %autosetup -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %define _disable_ld_no_undefined 1
 # enable-ooengles-20 is the only way to build...
 # otherwise we get hundreds of "multiple definition" errors
-%configure2_5x --enable-opengles-20
-%make LIBS='-lpthread'
+%configure --enable-opengles-20
+%make_build LIBS='-lpthread'
 
 %install
-%makeinstall_std
+%make_install
 
 rm -f %{buildroot}/%{_libdir}/*.la
 
