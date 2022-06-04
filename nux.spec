@@ -6,7 +6,7 @@
 Summary:	Visual rendering toolkit for real-time applications
 Name:		nux
 Version:	4.0.8
-Release:	1
+Release:	2
 License:	LGPL
 Group:		System/Libraries
 Source0:	https://launchpad.net/nux/4.0/%{version}/+download/%{name}-%{version}.tar.gz
@@ -65,7 +65,7 @@ export CXX=g++
 %define _disable_ld_no_undefined 1
 # enable-ooengles-20 is the only way to build...
 # otherwise we get hundreds of "multiple definition" errors
-%configure --enable-opengles-20
+%configure
 %make_build LIBS='-lpthread'
 
 %install
