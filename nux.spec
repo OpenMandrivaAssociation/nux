@@ -12,6 +12,11 @@ Group:		System/Libraries
 Source0:	https://launchpad.net/nux/4.0/%{version}/+download/%{name}-%{version}.tar.gz
 Patch0:   nux-disable-werror.patch
 Patch1:   boost-fix.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(libpng)
